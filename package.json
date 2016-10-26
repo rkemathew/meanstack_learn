@@ -4,13 +4,21 @@
   "description": "Learn Meanstack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js",
+    "start": "gulp start"
   },
   "author": "Ronnie",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
+    "http-status": "^0.2.3",
     "mongoose": "^4.6.5",
     "wagner-core": "^0.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mocha": "^3.1.2",
+    "superagent": "^2.3.0"
   }
 }

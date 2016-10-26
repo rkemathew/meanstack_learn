@@ -15,5 +15,13 @@ module.exports = function(wagner) {
     };
   }));
 
+  api.get('/question/:id', wagner.invoke(function(Question) {
+    return function(req, res) {
+      Question.findOne({ _id: req.params.id }, function(err, docs) {
+        res.send(JSON.stringify(docs));
+      });
+    };
+  }));
+
    return api;
 };
