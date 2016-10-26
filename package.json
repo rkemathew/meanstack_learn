@@ -4,8 +4,9 @@
   "description": "Learn Meanstack",
   "main": "index.js",
   "scripts": {
+    "lint": "standard",
     "test": "mocha test.js",
-    "start": "gulp start"
+      "posttest": "npm run lint"
   },
   "author": "Ronnie",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
     "mocha": "^3.1.2",
+    "standard": "^8.5.0",
     "superagent": "^2.3.0"
   }
 }
